@@ -65,7 +65,7 @@ const LoginCard = () => {
                       name="number"
                       id="number"
                       placeholder="+91 000-000-0000"
-                      class="bg-gray-50 border  text-gray-900 sm:text-sm rounded-md focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-[#0a0a0a] dark:border-[#2e2e2e] dark:placeholder-[#454545] dark:text-white dark:focus:ring-[#454545] dark:focus:border-[#454545]"
+                      class="bg-gray-50 border focus:ring-4  text-gray-900 sm:text-sm rounded-md focus:ring-[#878787] focus:border-[#878787] block w-full p-2.5 dark:bg-[#0a0a0a] dark:border-[#2e2e2e] dark:placeholder-[#454545] dark:text-white dark:focus:ring-[#454545] dark:focus:border-[#454545]"
                       required=""
                     />
                   </div>
@@ -82,7 +82,7 @@ const LoginCard = () => {
                 <button
                   disabled={focus === "" ? true : false}
                   type="submit"
-                  class="transition-all mt-6 font-medium w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 rounded-md text-sm px-5 py-2.5 text-center dark:text-[#0a0a0a] dark:bg-[#ededed] dark:hover:bg-[#878787] dark:focus:ring-[#878787] disabled:bg-[#1a1a1a] disabled:text-[#8f8f8f] disabled:hover:bg-[#1a1a1a] disabled:cursor-not-allowed"
+                  class="transition-all mt-6 font-medium w-full text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-primary-300 rounded-md text-sm px-5 py-2.5 text-center dark:text-[#0a0a0a] dark:bg-[#ededed] dark:hover:bg-[#878787] dark:focus:ring-[#878787] disabled:bg-[#1a1a1a] disabled:text-[#8f8f8f] disabled:hover:bg-[#1a1a1a] disabled:cursor-not-allowed"
                 >
                   Continue
                 </button>
@@ -126,6 +126,8 @@ const LoginCard = () => {
           </div>
         </div>
       </section>
+
+
     </>
   );
 };

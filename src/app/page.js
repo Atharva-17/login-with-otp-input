@@ -1,11 +1,14 @@
 import LoginCard from "@/components/LoginCard";
-import InputField from "@/components/ui/InputField";
+import { ModeToggle } from "@/components/ModeToggle";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <>
-      <div className="magicpattern_plain_dark">
+      <div className="magicpattern bg-hero-light dark:bg-hero-dark">
+        <div className="absolute right-0 p-6">
+          <ModeToggle />
+        </div>
         <div className="max-w-screen-lg mx-auto h-screen">
           <LoginCard />
         </div>
