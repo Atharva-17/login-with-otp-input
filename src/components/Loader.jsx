@@ -5,9 +5,9 @@ const Loader = () => {
     <>
       <div class="exampleClass">
         {" "}
-        <span></span>
-        <span></span>
-        <span></span>{" "}
+        <span className="bg-white dark:bg-black"></span>
+        <span className="bg-white dark:bg-black"></span>
+        <span className="bg-white dark:bg-black"></span>{" "}
       </div>
     </>
   );
