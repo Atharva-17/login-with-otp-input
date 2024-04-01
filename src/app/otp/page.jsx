@@ -1,8 +1,13 @@
+import InputOtpCard from '@/components/InputOtpCard'
 import React from 'react'
 
 const OtpInput = () => {
   return (
-    <div>Welcome to otp page</div>
+    <>
+      <div className="max-w-screen-lg mx-auto h-screen">
+        <InputOtpCard />
+      </div>
+    </>
   )
 }
 

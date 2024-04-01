@@ -1,10 +1,11 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import Loader from "./Loader";
 import { useRouter } from "next/navigation";
+import CardFooter from "./CardFooter";
 
 const LoginCard = () => {
   const [focus, setFocus] = useState("");
@@ -12,7 +13,7 @@ const LoginCard = () => {
   const [loader, setLoader] = useState(false);
 
   const router = useRouter();
- 
+
   const handleClick = () => {
     setLoader(true);
     router.push("/otp");
@@ -100,22 +101,7 @@ const LoginCard = () => {
                   </buton>
                 </div>
 
-                <p class="mt-6 text-sm font-light text-gray-500 dark:text-[#a1a1a1]">
-                  By continuing, you agree to our{" "}
-                  <a
-                    href="#"
-                    class="font-medium text-primary-600 hover:underline dark:text-white"
-                  >
-                    Term
-                  </a>{" "}
-                  and{" "}
-                  <a
-                    href="#"
-                    class="font-medium text-primary-600 hover:underline dark:text-white"
-                  >
-                    Privacy Policy.
-                  </a>
-                </p>
+                <CardFooter />
               </form>
             </div>
           </div>
